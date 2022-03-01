@@ -197,8 +197,10 @@ def bot_help(update, context):
     sendMarkup(f'<a href="https://telegra.ph/{help}">Click and Read</a>', context.bot, update, reply_markup)
 
 botcmds = [
-
-        (f'{BotCommands.MirrorCommand}', 'Mirror'),
+        (f'{BotCommands.MediaInfoCommand}','media info'),
+        (f'{BotCommands.SpeedCommand}','Speed of the bot'),
+        (f'{BotCommands.StartCommand}','Start the bot'),
+        (f'{BotCommands.MirrorCommand}','Mirror'),
         (f'{BotCommands.ZipMirrorCommand}','Mirror and upload as zip'),
         (f'{BotCommands.UnzipMirrorCommand}','Mirror and extract files'),
         (f'{BotCommands.QbMirrorCommand}','Mirror torrent using qBittorrent'),
